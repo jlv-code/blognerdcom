@@ -39,3 +39,8 @@ function statics() {
     wp_enqueue_script( 'nerdcomblog-scripts', get_template_directory_uri() . '/dist/scripts.min.js', array('jquery'), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'statics' );
+
+function custom_excerpt_length( $length ) {
+    return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
