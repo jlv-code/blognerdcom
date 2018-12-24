@@ -1,0 +1,28 @@
+{
+  "name": "project-nerdcomblog",
+  "version": "1.0.0-alpha",
+  "description": "Nerdcom Blog based on Wordpress",
+  "main": "index.js",
+  "scripts": {
+    "nc:watch": "cd wp-content/themes/nerdcomblog && npm run wp:gulp",
+    "nc:tparty": "cd wp-content/themes/nerdcomblog && npm run wp:gulp-tparty",
+    "nc:sass": "cd wp-content/themes/nerdcomblog && npm run wp:gulp-sass",
+    "nc:scripts": "cd wp-content/themes/nerdcomblog && npm run wp:gulp-scripts",
+    "nc:static": "cd wp-content/themes/nerdcomblog && npm run wp:gulp-static"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlv-code/blognerdcom.git"
+  },
+  "keywords": [
+    "nerdcom",
+    "blog",
+    "wordpress"
+  ],
+  "author": "José Viéitez",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jlv-code/blognerdcom/issues"
+  },
+  "homepage": "https://github.com/jlv-code/blognerdcom#readme"
+}

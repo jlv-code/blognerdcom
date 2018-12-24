@@ -4,9 +4,11 @@
   "description": "Nerdcom Blog - Wordpress Template",
   "main": "Gulpfile.js",
   "scripts": {
-    "wp:gulp": "gulp",
-    "wp:gulp-sass": "gulp sass",
-    "wp:gulp-scripts": "gulp scripts"
+    "wp:gulp": "gulp watch",
+    "wp:gulp-tparty": "gulp third-party-from-node-modules",
+    "wp:gulp-sass": "gulp compile-sass",
+    "wp:gulp-scripts": "gulp scripts",
+    "wp:gulp-static": "gulp static-files"
   },
   "author": "José Viéitez",
   "license": "AGPL-3.0",
@@ -21,7 +23,6 @@
     "gulp-order": "^1.1.1",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4",
-    "hamburgers": "^1.1.3",
-    "jquery": "^3.3.1"
+    "hamburgers": "^1.1.3"
   }
 }
