@@ -19,8 +19,22 @@
 </section>
 
 <!-- CTA Newsletter -->
-<section class="container-fluid section-cta-newsletter mb-5">
-    <?php get_template_part( 'partials/template', 'cta-newsletter' ) ?>
+<section class="container-fluid section-cta-newsletter mt-5 border-top border-gray-200">
+	<?php get_template_part( 'partials/template', 'cta-newsletter' ) ?>
+</section>
+
+<!-- Comments section -->
+<section class="container-fluid section-comments mt-5">
+    <div class="row">
+        <div class="container">
+			<?php comments_template(); ?>
+        </div>
+    </div>
+</section>
+
+<!-- Articles Related -->
+<section class="container-fluid section-articles-related mt-5">
+    <?php get_template_part( 'partials/template', 'articles-related' ) ?>
 </section>
 
 <?php get_footer() ?>
