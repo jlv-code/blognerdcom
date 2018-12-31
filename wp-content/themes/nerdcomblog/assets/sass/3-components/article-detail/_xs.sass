@@ -8,4 +8,22 @@ section.article-detail
     //  Article Body is the Wordpress Editor Sass file (0-base/_wordpress-editor.sass)
     @import "../wordpress-editor/main"
 
-    //.article-footer
+    .article-footer
+        padding-top: 30px
+        padding-bottom: 15px
+        background-color: transparent
+
+        a
+            padding: 5px 10px
+            color: $gray-500
+            font-weight: bold
+            background-color: transparent
+            border: 1px solid $gray-500
+            border-radius: 4px
+            transition: .3s
+
+            &:hover
+                color: $white
+                background-color: $red
+                border-color: $red
+

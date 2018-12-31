@@ -17,8 +17,8 @@ $featured_post = new WP_Query( $args );
 <div class="row">
     <div class="container">
         <?php if ( $featured_post->have_posts() ) : while ( $featured_post->have_posts() ) : $featured_post->the_post(); $GLOBALS['featuredPostId'] = get_the_ID() ?>
-        <article id="post-id-<?php the_ID() ?>" class="row no-gutters featured-post">
-            <div class="col-12 col-lg-7">
+        <article id="post-id-<?php the_ID() ?>" class="row featured-post">
+            <div class="col-12 col-lg-7 mb-5 mb-lg-0">
                 <a class="featured-post--image" href="<?php the_permalink() ?>"><?php the_post_thumbnail('large', [ 'class' => 'img-fluid' ]) ?></a>
             </div>
             <div class="col-12 col-lg-5">

@@ -16,7 +16,9 @@
                     <?php the_post_thumbnail('full', array( 'class' => 'img-fluid mt-5' )) ?>
                 </header>
                 <article class="article-body"><?php the_content() ?></article>
-<!--                <footer class="article-footer"></footer>-->
+                <footer class="article-footer border-top border-gray-200 text-center">
+                    <?php the_category(' ') ?>
+                </footer>
             </section>
         </div>
         <?php endwhile; endif; wp_reset_postdata(); ?>
