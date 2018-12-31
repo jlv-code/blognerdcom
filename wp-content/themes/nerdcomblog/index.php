@@ -12,6 +12,11 @@
     <?php get_template_part( 'partials/template', 'featured-post' ) ?>
 </section>
 
+<!-- CTA Newsletter -->
+<section class="container-fluid section-cta-newsletter mb-5">
+	<?php get_template_part( 'partials/template', 'cta-newsletter' ) ?>
+</section>
+
 <!-- Category Navigation -->
 <section class="container-fluid section-category-navigation border-top border-gray-200 pt-4">
     <?php get_template_part( 'partials/template', 'category-navigation' ) ?>
@@ -21,11 +26,6 @@
 <!-- Article Listing -->
 <section class="container-fluid section-article-listing gray-200 pt-4 mb-5">
     <?php get_template_part( 'partials/template', 'post-listing' ) ?>
-</section>
-
-<!-- CTA Newsletter -->
-<section class="container-fluid section-cta-newsletter mb-5">
-    <?php get_template_part( 'partials/template', 'cta-newsletter' ) ?>
 </section>
 
 <?php get_footer() ?>

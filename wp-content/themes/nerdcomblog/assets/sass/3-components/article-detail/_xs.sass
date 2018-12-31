@@ -1,18 +1,11 @@
-article.article-detail
+section.article-detail
     max-width: 992px
 
     .article-header
         img
             box-shadow: 0 0 25px $gray-500
 
-    .article-body
-        h1, h2, h3, h4, h5, h6
-            margin-top: 2em
-            margin-bottom: 1.5em
+    //  Article Body is the Wordpress Editor Sass file (0-base/_wordpress-editor.sass)
+    @import "../wordpress-editor/main"
 
-        ul
-            padding-left: 5em
-
-            li
-                margin-bottom: 1.5em
-                font-size: 1.4em
+    //.article-footer
