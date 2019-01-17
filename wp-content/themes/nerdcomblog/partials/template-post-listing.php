@@ -7,7 +7,8 @@
 $args = array(
     'posts_per_page' => 4,
     'post__not_in' => array( $GLOBALS['featuredPostId'] ),
-    'paged' => ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1
+    'paged' => ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1,
+    'post_status' => 'published'
 );
 
 $posts = new WP_Query( $args );
